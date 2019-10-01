@@ -4,7 +4,7 @@
  * Cada hilo escribe un número de líneas
  * que se determina al construirlo
  */
-package UT2.ejemplos;
+package src.UT1;
 
 public class PrimerHiloR_06 implements Runnable { 
    private int x;   

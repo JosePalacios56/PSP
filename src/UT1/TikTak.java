@@ -1,4 +1,4 @@
-package UT1;
+package src.UT1;
 
 public class TikTak {
 

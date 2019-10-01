@@ -1,6 +1,6 @@
-package UT1.EjercicioTic_Tac;
+package src.UT1;
 
-public class Tic {
+public class Tic extends Thread {
 
     public void run(){
         System.out.println("TIC");

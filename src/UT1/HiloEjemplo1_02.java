@@ -4,7 +4,7 @@
  * 
  * La función main crea 3 hilos
  */
-package UT2.ejemplos;
+package src.UT1;
  
 
 public class HiloEjemplo1_02 extends Thread {
