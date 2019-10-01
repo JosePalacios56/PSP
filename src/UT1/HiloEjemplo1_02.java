@@ -8,8 +8,8 @@ package UT2.ejemplos;
  
 
 public class HiloEjemplo1_02 extends Thread {
-	private int c; // contador de cada hilo
-	private int hilo;
+		private int c; // contador de cada hilo
+		private int hilo;
 
 	// constructor
 	public HiloEjemplo1_02(int hilo) {
