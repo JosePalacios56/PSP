@@ -10,10 +10,8 @@ public class Main {
         Cajera cajera2=new Cajera("Cajera2");
 
 
-
-
-        cajera1.start();
-        cajera2.start();
+        cajera1.procesarCompra(cliente1, initialTime);
+        cajera2.procesarCompra(cliente2,initialTime);
 
         
     }
