@@ -1,26 +1,29 @@
 package src.UT2;
 
-public class Cajera extends Thread{
+public class Cajera extends Thread {
 
     private String nombre;
 
+    private Cliente cliente;
+
+    private long initialTime;
 
     public Cajera(String nombre) {
         
         this.nombre = nombre;
     }
-    public void run(Cliente cliente, long timeStamp){
+    public void run(){
 
         System.out.println("La cajera "+this.nombre+
                 "COMIENZA A PROCESAR LA COMPRA DEL CLIENTE"+cliente.getNombre()+
-                "EN EL TIEMPO"+ (System.currentTimeMillis()-timeStamp)/1000+" seg");
+                "EN EL TIEMPO"+ (System.currentTimeMillis()-initialTime)/1000+" seg");
 
         for(int i=0;i<cliente.getCarroCompra().length;i++){
             this.esperarXsegundos(cliente.getCarroCompra()[i]);
-            System.out.println("Procesado el producto"+(i+1)+"->tiempo: "+(System.currentTimeMillis()-timeStamp)/1000+"seg");
+            System.out.println("Procesado el producto"+(i+1)+"->tiempo: "+(System.currentTimeMillis()-initialTime)/1000+"seg");
 
         }
-        System.out.println("La cajera "+this.nombre+ "HA TERMINADO DE PROCESAR"+cliente.getNombre()+"EN EL TIEMPO:"+(System.currentTimeMillis()-timeStamp)/1000+"seg");
+        System.out.println("La cajera "+this.nombre+ "HA TERMINADO DE PROCESAR"+cliente.getNombre()+"EN EL TIEMPO:"+(System.currentTimeMillis()-initialTime)/1000+"seg");
 
 
 
