@@ -1,6 +1,6 @@
 package src.UT2;
 
-public class Cajera {
+public class Cajera extends Thread{
 
     private String nombre;
 
@@ -9,7 +9,7 @@ public class Cajera {
         
         this.nombre = nombre;
     }
-    public void procesarCompra(Cliente cliente, long timeStamp){
+    public void run(Cliente cliente, long timeStamp){
 
         System.out.println("La cajera "+this.nombre+
                 "COMIENZA A PROCESAR LA COMPRA DEL CLIENTE"+cliente.getNombre()+

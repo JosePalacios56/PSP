@@ -12,8 +12,8 @@ public class Main {
         long initialTime=System.currentTimeMillis();
 
 
-        cajera1.procesarCompra(cliente1,initialTime);
-        cajera2.procesarCompra(cliente2,initialTime);
+        cajera1.run(cliente1,initialTime);
+        cajera2.run(cliente2,initialTime);
 
         
     }
