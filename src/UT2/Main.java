@@ -8,5 +8,13 @@ public class Main {
 
         Cajera cajera1=new Cajera("Cajera1");
         Cajera cajera2=new Cajera("Cajera2");
+
+        long initialTime=System.currentTimeMillis();
+
+
+        cajera1.procesarCompra(cliente1,initialTime);
+        cajera2.procesarCompra(cliente2,initialTime);
+
+        
     }
 }
