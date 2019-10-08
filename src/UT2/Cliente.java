@@ -11,9 +11,6 @@ public class Cliente {
         this.carroCompra=carroCompra;
 
     }
-    public Cliente(){
-
-    }
 
     public String getNombre() {
         return nombre;
