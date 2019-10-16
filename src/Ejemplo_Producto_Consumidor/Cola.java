@@ -8,18 +8,14 @@ public class Cola {
 
 
 
-    public synchronized int  get(int n){
-        while(!disponible||n!=turno){
+    public synchronized int  get(){
+        while(!disponible){
             try{
                 wait();
             }catch (InterruptedException e){ }
         }
         disponible=false;
-        if (turno==1){
-            turno=2;
-        }else{
-            turno=1;
-        }
+
                 notify();
                 return numero;
     }

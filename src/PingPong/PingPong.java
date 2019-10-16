@@ -10,14 +10,17 @@ public class PingPong extends Thread{
     }
 
     public void run(){
+
         while(true){
             playTurn();
             try{
-                sleep(500);
+                sleep(400);
             }catch(InterruptedException e){
 
             }
         }
+
+
     }
     public synchronized void playTurn(){
         if(!mensage.equals(turno)){

@@ -12,7 +12,7 @@ public class Consumidor extends Thread{
     public  void run(){
         int valor=0;
         for(int i=0;i<5;i++){
-            valor= cola.get(n);
+            valor= cola.get();
             System.out.println(i+" =>Consumidor : "+n+" consume :"+ valor);
         }
     }
