@@ -1,4 +1,4 @@
-package src.CuentaBancaria;
+package src.CuentaBancaria2;
 
 public class Main {
     public static void main(String[] args) {

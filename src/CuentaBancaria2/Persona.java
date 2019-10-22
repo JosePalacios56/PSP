@@ -1,4 +1,4 @@
-package src.CuentaBancaria;
+package src.CuentaBancaria2;
 public class Persona extends Thread{
     String nombre;
     Cuenta cuenta;

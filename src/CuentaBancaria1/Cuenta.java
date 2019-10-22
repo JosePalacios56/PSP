@@ -1,7 +1,6 @@
-package src.CuentaBancaria;
+package src.CuentaBancaria1;
 
 public class Cuenta {
-
     double saldo;
     int valorMaximo;
 
