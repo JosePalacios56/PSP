@@ -1,6 +1,6 @@
 package src.CuentaBancaria1;
 
-import ut2.cuenta_bancaria_v2.Cuenta;
+
 
 public class Persona extends Thread{
     String nombre;
