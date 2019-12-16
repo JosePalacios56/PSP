@@ -24,6 +24,7 @@ public class HiloHola extends Thread{
     }
 
     public void run() {
+
             System.out.println("Hola Mundo "+x);
     }
 }
