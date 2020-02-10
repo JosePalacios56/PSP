@@ -22,7 +22,7 @@ public class Actividad4_4 {
         // se crea cliente SMTP seguro
         AuthenticatingSMTPClient client = new AuthenticatingSMTPClient();
         Scanner sc= new Scanner(System.in);
-
+    System.out.println("Actividad 4.4");
         // datos del usuario y del servidor
         String server = "smtp.gmail.com";
         System.out.println("dime tu nombre de usuario(el correo electronico)");
